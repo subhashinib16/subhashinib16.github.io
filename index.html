@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top"> <!--navbar-light bg-light -->
+<div class="container-fluid">
+   <a class="navbar-brand" herf="#"><img src="img/logoo.png"> </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    	<ul class="navbar-nav ml-auto">
+    		<li class="nav-item ">
+               <a class="nav-link active" href="#">Home</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#me">About</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#so">Connect</a>
+           </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+
+
+<!--- Image Slider -->
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+    <div  class="carousel-inner">
+    	<div class="carousel-item active">
+         <img src="img/ynot.jpg">
+    		<div class="carousel-caption">
+    		
+    		</div>
+    	</div>
+    	<div class="carousel-item">
+    		<img src="img/girl.jpg">
+        <div class="carousel-caption">
+             
+           </div>
+        </div>
+        <div class="carousel-item">
+           <div class="embed-responsive embed-responsive-4by3">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FysV6XnDlQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+    	</div>
+    
+      <a class="carousel-control-prev" href="#slides" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#slides" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+   </div> 	
+   <hr class="my-4">
+</div>
+<!--- Jumbotron -->
+
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12"> 
+		<h1 class="display-4">Being Optimistic!</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p class="lead">Welcome, The urge of learning something new and interesting is common among people
+    but, learning something about your innerself is essential. Ever tried to control your upcoming event with your thoughts. Planning about the future is what we do usually but, ever tried to believe that inspite of the circumstance the result of the event is executed as you planned. and that is called "being optimistic". Well, I am not here to give a lecture. May be its an informal introduction about my perspective of dealing with life. </p>
+	</div>
+</div>
+</div>
+<!--- Three Column Section -->
+
+<hr class="my-4">
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-12 col-lg-8">
+		<h2>New year prerequisite...</h2>
+		<p class="lead">Another whole year is ahead of us. Lets be prepared to enjoy and taste every flavour of it with a wide smile. Being aware
+    of the "worth" of people and thing we own will help us to cherish them and so it is a joyful way to lead the life.</p>
+    <br> 
+         
+    </div>
+    <div class="col-lg-4">
+    	<img src="img/desk.jpg" class="img-fluid">
+    </div>
+</div>
+</div>
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+      <div class="container-fluid">
+<div class="row">
+<div class="col-sm-8 col-md-4">
+<div id="main">
+<div class="content">
+
+
+<div class="counter">
+<div id="countdown">
+
+</div><!-- /#Countdown Div -->
+</div> <!-- /.Counter Div -->
+</div> <!-- /.Content Div -->
+</div> <!-- /#Main Div -->
+</div> <!-- /.Columns Div -->
+</div> <!-- /.Row Div -->
+</div> <!-- /.Container Div -->
+
+		</div>
+       
+	</div>
+</figure>
+<script type="text/javascript">
+  // set the date we're counting down to
+var target_date = new Date('Jan,01, 2019 00:00:00').getTime();
+// variables for time units
+
+ 
+// get tag element
+var countdown = document.getElementById('countdown','countdowns');
+
+// update the tag with id "countdown" every 1 second
+var x=setInterval(function () {
+ 
+    // find the amount of "seconds" between now and target
+    var now = new Date().getTime();
+    var distance= target_date-now;
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+     
+    // format countdown string 
+     
+    // format countdown string + set tag value
+    if (distance < 0) {
+    clearInterval(x);
+    countdown.innerHTML='<span> <h2 class="display-4">HAPPY NEW YEAR 2019</h2></span>';
+     countdowns.innerHTML='<<div class="dis"> <h1 >HAPPY NEW YEAR 2019</h1></div>';
+  }
+  else{
+    countdown.innerHTML = '<div class="text"><h2 class="display-2">COUNTDOWN ENDS IN:</h2></div>'+'<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
+    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';
+    countdowns.innerHTML = '<div class="dis"> <h1 >Advance Happy New Year 2019</h1></div>'+'<div class="text"><h2 class="display-2">COUNTDOWN ENDS IN:</h2></div>'+'<span class="days" style="color:#6f42c1;">' + days +  ' <b>Days</b></span> <span class="hours"style="color:#6f42c1;">' + hours + ' <b>Hours</b></span> <span class="minutes"style="color:#6f42c1;">'
+    + minutes + ' <b>Minutes</b></span> <span class="seconds"style="color:#6f42c1;">' + seconds + ' <b>Seconds</b></span>';
+  }
+    
+ 
+}, 1000);
+
+</script>
+
+<!--- Emoji Section -->
+
+<button class="fun" data-toggle="collapse" data-target="#emoji"><p class="lead">Click for fun...!</p></button>
+<div id="emoji" class="collapse">
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-sm-6 col-md-3">
+		<img class="gif" src="img/gif/panda.gif">
+	</div>
+	<div class="col-sm-6 col-md-3">
+    <img class="gif" src="img/gif/poo.gif">
+  </div>
+	<div class="col-sm-6 col-md-3">
+		<img class="gif" src="img/gif/unicorn.gif">
+	</div>
+	<div class="col-sm-6 col-md-3">
+		<img class="gif" src="img/gif/chicken.gif">
+	</div>
+</div>
+</div>
+</div>
+<!--- Meet the team -->
+
+<!--- Cards -->
+
+	
+
+
+
+	
+
+<!--- Two Column Section -->
+<div class="container-fluid padding" id="me">
+<div class="row padding">
+	<div class="col-md-12 col-lg-8">
+		<h2>Why ?</h2>
+		<p class="lead"><ul><li>To covey wishes to my loved ones</li>
+      <li>Maybe I am too vetty and endup getting interested in this
+           or I am testing whether I can host a website. </li>
+           <li>Blah Blah Blah....</li>
+         </ul></p>
+         <br><p class="lead"> Whatever, let me now how you felt by seeing my little effort of making this page (for now its static). Love to learn more and more. Help me to do so specially "Techie's" who are viewing this page.
+    </p>
+         <br>
+    </div>
+    <div class="col-lg-4">
+    	<img src="img/she.jpg" class="img-fluid">
+    </div>
+</div>
+</div>
+<hr class="my-4">
+
+
+<!--- Connect -->
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding" >
+<div class="row text-center">
+	<div class="container-fluid padding" id="so">
+<div class="row text-center padding">
+  <div class="col-12">
+    <h2>Connect</h2>
+  </div>
+  <div class="col-12 social padding">
+    <a href="https://www.facebook.com/subhashini.ram.5"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/subhashanthi16"><i class="fab fa-twitter"></i></a>
+
+      <a href="https://www.instagram.com/subhashini_balachandar/"><i class="fab fa-instagram"></i></a>
+      
+  </div>
+</div>
+</div>
+
+    <div class="col-12">
+	<hr class="light-100">
+	<h5>&copy; w3newbie.com</h5>
+    </div>
+
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+ 
+
+

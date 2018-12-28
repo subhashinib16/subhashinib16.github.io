@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins',sans-serif;
+  color:#222;
+}
+
+}
+.vd video{
+  position: absolute;
+  left: 50%;
+  top:50%;
+ ;
+}
+
+.navbar{
+  padding: .8rem;
+  color: #6648b1;
+
+}
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+  
+}
+.carousel-caption{
+
+  top:50%;
+  
+}
+.carousel-caption h1{
+  font-size: 400%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.dis h1{
+
+  font-size: 400%;
+  text-transform: uppercase;
+  
+
+}
+
+.carousel-caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary-light{
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+.btn-primary-light:hover{
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.jumbotron{
+  padding: 1rem;
+  border-radius: 0;
+
+}
+.padding{
+  padding-bottom: 2rem;
+  word-spacing: 10px;
+}
+.welcome{
+  width: 75%;
+  margin:0 auto;
+  padding-top: 2rem;
+}
+.welcome p{
+  word-spacing: 10px;
+}
+.welcome hr{
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.fa-code{
+  color: #e54d26;
+}
+.fa-bold{
+  color: #563d7c;
+
+}
+.fa-css3{
+  columns: #2163af;
+}
+.fa-code,.fa-bold,.fa-css3{
+  font-size: 4rem;
+  margin:1rem;
+}
+.fun{
+  width: 100%;
+  margin-bottom: 2rem;
+
+}
+.gif{
+  max-width: 100%;
+}
+.social a{
+  font-size: 4.5rem;
+  padding:3rem;
+
+}
+.fa-facebook{
+  color:#3b5998;
+}
+.fa-twitter{
+  color: #00aced;
+}
+.fa-google-plus-g{
+  color:#dd4bc9;
+}
+.fa-instagram{
+  color: #517fa8;
+}
+.fa-youtube{
+  color: #bb0000;
+
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover{
+  color: #d5d5d5;
+}
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100{
+   border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+   .social a{
+    font-size: 4rem;
+    padding:2rem;
+   }
+  }
+@media (max-width: 768px) {
+  .carousel-caption{
+  
+  top:45%;
+  
+}
+
+  .carousel-caption h1{
+  font-size:200%;
+}
+.dis h1{
+  font-size:200%;
+}
+
+.carousel-caption h3{
+  font-size: 100%;
+  font-weight: 300;
+ 
+  padding-bottom: .2rem;
+}
+.carousel-caption .btn{
+   font-size: 70%;
+   padding: 4px 7px;
+}
+.display-4{
+  font-size: 200%;
+
+}
+.social a{
+  font-size: 2.5rem;
+  padding: 1.2rem;
+}
+}
+@media (max-width: 576px) {
+  .carousel-caption{
+  
+  top:40%;
+  
+}
+
+
+  .carousel-caption h1{
+  font-size:150%;
+}
+.dis h1{
+  font-size:150%;
+}
+
+.carousel-caption h3{
+  font-size: 50%;
+  font-weight: 200;
+ 
+  padding-bottom: .1rem;
+}
+.carousel-caption .btn{
+   font-size: 20%;
+   padding: 2px 6px;
+}
+.carousel-indicators{
+  display: none;
+}
+.social a{
+  font-size: 2rem;
+  padding: .7rem;
+}
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/fixed.jpg');
+  
+}
+.container-fluid {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+#main { 
+  background-image: url('img/fixed.jpg');
+  height: 430px;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.content {
+  padding: 10px 44px;
+}
+
+.text {
+  border-bottom: 1px solid #262626;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.text h2 {
+  color: #6f42c1;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.counter {
+
+  text-align: center;
+}
+
+.counter h3 {
+  color: #E5E5E5;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+#countdown {
+  color: #FFFFFF;
+}
+
+#countdown span {
+  color: #E5E5E5;
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+#countdowns span {
+  color: #E5E5E5;
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
