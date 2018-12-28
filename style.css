@@ -13,7 +13,9 @@ html,body{
   top:50%;
  ;
 }
-
+.lead{
+  padding-right: 2rem;
+}
 .navbar{
   padding: .8rem;
   color: #6648b1;
